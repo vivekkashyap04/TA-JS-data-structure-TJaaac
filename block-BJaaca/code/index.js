@@ -23,11 +23,11 @@ character.greet = function(){
 // - Add a new property to the character object named `isFemale` and value will be `true`
 character.isFemale = true;
 // - Execute the function stored in the greet key of the character object
-function stored(){
     character.greet;
-}
 //  - Change the method `greet` to now alert `She is [NAME HERE] and her title is [TITLE HERE]`.
-character.greet = alert(`I am ${character.characterName} and my title is ${character.title}`)
+character.greet = function(){
+alert(`I am ${character.characterName} and my title is ${character.title}`);
+}
 // - Check by calling `greet` and see if the message changed or not.
 character.greet;
 //  - Add a new property in the character object `isAdult`. The value will be true if age is greater than 18 or it will be false.
@@ -39,10 +39,10 @@ character.changeIsAdult = !character.isAdult;
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
 
 let keyName = 'playedBy';
-character["keyname"] = "Maisie Williams";
+character[keyname] = "Maisie Williams";
 
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
-alert(character["keyname"]);
+alert(character[keyname]);
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
 console.log(character[42] = 42);
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
